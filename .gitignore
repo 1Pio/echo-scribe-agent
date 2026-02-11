@@ -1,0 +1,25 @@
+
+.env
+.env.local
+.venv
+
+# Python caches and tooling artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Test and coverage outputs
+.coverage
+.coverage.*
+htmlcov/
+
+# Local/runtime directories
+.daemon/
+.archived/
+.planning/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
