@@ -1,0 +1,9 @@
+services:
+  kokoro:
+    image: ghcr.io/remsky/kokoro-fastapi-gpu:v0.2.4-master
+    ports:
+      - "8880:8880"
+    restart: unless-stopped
+    gpus: all
+    environment:
+      - PORT=8880

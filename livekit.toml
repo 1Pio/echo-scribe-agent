@@ -1,0 +1,12 @@
+# LiveKit Agent Configuration
+# This file configures the agent deployment settings for LiveKit Cloud
+
+[agent]
+job_type = "room"
+worker_type = "agent"
+
+# Prewarm configuration
+# Keeps worker processes ready with preloaded models to reduce cold-start latency
+[agent.prewarm]
+count = 1  # Keep 1 prewarmed worker with VAD loaded
+           # Increase to 3-5 for production to handle concurrent sessions
