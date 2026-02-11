@@ -81,6 +81,7 @@ Each task was committed atomically:
 
 ## Issues Encountered
 - `git diff --no-index` process substitution (`<(...)`) was unsupported in this shell; switched to a temp file diff for LICENSE verification.
+- `gsd-tools state` automation commands expected full phase-style STATE schema and returned no-op errors; state updates were applied manually in `.planning/STATE.md`.
 
 ## User Setup Required
 None - no external service configuration required.
